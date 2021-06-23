@@ -4,7 +4,7 @@ var sentiment = new Sentiment();
 
 var input = 'This is so cool 😃';
 
-sentiment.analyze(input, function (err, result) {
+sentiment.analyze(input, { emojis: true }, function (err, result) {
     test('asynchronous positive text and emoji', function (t) {
         t.type(result, 'object');
         t.equal(result.score, 3);

@@ -3,7 +3,7 @@ var Sentiment = require('../../lib/index');
 var sentiment = new Sentiment();
 
 var input = 'This is so cool 😃';
-var result = sentiment.analyze(input);
+var result = sentiment.analyze(input, { emojis: true });
 
 test('synchronous positive with emoji', function (t) {
     t.type(result, 'object');

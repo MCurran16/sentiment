@@ -1,0 +1,7 @@
+.circleci
+.nyc_output
+*.md
+!README.md
+.DS_Store
+test/*
+.eslint*
